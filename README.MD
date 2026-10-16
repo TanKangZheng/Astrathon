@@ -5,7 +5,7 @@ Astrathon is a python wrapper for the Echoes of Astra open API (https://app.echo
 This project is fanmade, and is unaffiliated with Parhelion Studios.
 ## Installation
 
-WIP
+Astrathon is available on PyPi, and does not require other dependencies to be installed on your end to use.
 ```
-WIP
+pip install Astrathon
 ```

@@ -5,8 +5,8 @@ import re
 class EOACardData:
     # Card ID
     cardId: str
-    # Set ID
-    setId: str
+    # Set ID # DEPRECATED FIELD #
+    # setId: str
     # Card Name
     cardName: str
     # Card Affinity
@@ -61,7 +61,6 @@ class EOACardData:
             return re.sub(r"u([0-9A-F]{4})", r"\\u\1", text).encode().decode("unicode_escape")
 
         self.cardId = data.get("cardId")
-        self.setId = data.get("setId")
         self.cardName = data.get("cardName")
         self.cardAffinity = data.get("cardAffinity")
         self.cardType = data.get("cardType")
